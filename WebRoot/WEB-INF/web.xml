@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>VideoManager</display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadVideo</servlet-name>
+    <servlet-class>com.alexanderwjz.servlet.UploadVideo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>删除视频</description>
+    <display-name>RemoveVideo</display-name>
+    <servlet-name>RemoveVideo</servlet-name>
+    <servlet-class>com.alexanderwjz.servlet.RemoveVideo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>列出视频文件</description>
+    <display-name>ListVideo</display-name>
+    <servlet-name>ListVideo</servlet-name>
+    <servlet-class>com.alexanderwjz.servlet.ListVideo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>播放或删除视频文件</description>
+    <display-name>PlayAndPauseVideo</display-name>
+    <servlet-name>PlayAndPauseVideo</servlet-name>
+    <servlet-class>com.alexanderwjz.servlet.PlayAndPauseVideo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadVideo</servlet-name>
+    <url-pattern>/UploadVideo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RemoveVideo</servlet-name>
+    <url-pattern>/RemoveVideo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListVideo</servlet-name>
+    <url-pattern>/ListVideo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PlayAndPauseVideo</servlet-name>
+    <url-pattern>/PlayAndPauseVideo</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
